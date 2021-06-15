@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=" />
+
+    <link rel="stylesheet" href="index.css" />
+
+    <title>LM Livraria</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <h1>LM Livraria</h1>
+        <form action="/search-result" class="form">
+          <input
+            type="text"
+            name="search"
+            placeholder="Pesquise por autor,título e nome"
+			style="height: 20px"
+          />
+        </form>
+        <div class="account">
+          <img class="account_heart" src="./images/heart.svg" alt="heart" />
+
+          <div class="account_basket">0</div>
+          <p>EN</p>
+        </div>
+      </nav>
+
+      <ul class="menu">
+        <li class="menu_item">
+          <a class="link" href="file:///C:/Users/laris/Desktop/css-booksy/index.html">Home</a>
+        </li>
+        <li class="menu_item">
+          <a class="link" href="file:///C:/Users/laris/Desktop/css-booksy/nossahistoria.html">Nossa história</a>
+        </li>
+        <li class="menu_item">
+          <a class="link" href="file:///C:/Users/laris/Desktop/css-booksy/contatos.html">Contatos</a>
+        </li>
+        
+      </ul>
+
+      <div class="landing">
+        <div class="landing_container">
+          <h2>Para encher a estante e a sua imaginação!</h2>
+          <p>Compre dois livros selecionados e ganhe um de graça.</p>
+          <a class="landing_container_link" href="/library">Confira</a>
+        </div>
+
+        <div class="landing_container">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_Cp59I2.json"
+            background="transparent"
+            speed="0.5"
+            style="width: 300px; height: 300px"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </div>
+
+      <div class="library">
+        <div class="library_header">
+          <h3>Mais vendidos</h3>
+			  <a class="link" href="/library">Ver todos</a>
+        </div>
+        <div class="library_gallery">
+          <div class="library_gallery_book">
+            <img src="./images/cinco.jpg" alt="cinco" style="height: 100px" />
+            <p>Ramen Albert</p> 
+          </div>
+		  
+          <div class="library_gallery_book">
+            <img src="./images/mais.jpg" alt="mais" style="height: 100px" />
+            <p>Ramen Albert</p>
+          </div>
+		  
+          <div class="library_gallery_book">
+            <img src="./images/pai.jpg" alt="pai" style="height: 100px" />
+            <p>Ramen Albert</p>
+          </div>
+		  
+          <div class="library_gallery_book">
+            <img src="./images/poder.jpg" alt="poder" style="height: 100px" />
+            <p>Ramen Albert</p>
+          </div>
+		  
+          <div class="library_gallery_book">
+            <img src="./images/girl.jpg" alt="girl" style="height: 100px" />
+            <p>Ramen Albert</p>
+          </div>
+		  
+          <div class="library_gallery_book">
+            <img src="./images/foda.jpg" alt="foda" style="height: 100px" />
+            <p>Ramen Albert</p>
+          </div>
+		 
+			<div class="library_gallery_book">
+            <img src="./images/zero.jpg" alt="zero" style="height: 100px" />
+            <p>Ramen Albert</p>
+         </div>
+		  
+		   <div class="library_gallery_book">
+            <img src="./images/fome.jpg" alt="fome" style="height: 100px" />
+            <p>Ramen Albert</p>
+         </div>
+		 
+		   <div class="library_gallery_book">
+            <img src="./images/scrum.jpg" alt="scrum" style="height: 100px" />
+            <p>Ramen Albert</p>
+         </div>
+		  
+      </div>
+	  
+	  <div class="w3-container w3-padding-32" id="contato">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Deixe seu recado aqui.</h3>
+    <p>Para elogios, dúvidas e/ou reclamações.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Nome" required name="Nome">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Assunto" required name="Assunto">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Mensagem" required name="Mensagem">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+      </button>
+    </form>
+  </div>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fcreditos"].value;
+  if (x == "") {
+    alert("Trabalho feito por Larissa Miguel para disciplina: Desenvolvimento Web");
+    return false;
+  }else{
+	alert("Feito por Larissa Miguel para disciplina: Desenvolvimento Web");
+  }
+ }
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Créditos: <input type="text" name="fcreditos">
+  <input type="submit" value="Submit">
+</form>
+ 
+</main>
+</body>
+</html>
